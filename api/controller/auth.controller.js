@@ -72,3 +72,8 @@ export const logout = (req,res) =>{
     res.clearCookie("token").status(200).json({message:"Logout Sucessful"})
 
 }
+
+
+
+// api1 3d38819
+// front1 3d38819
