@@ -14,7 +14,7 @@ app.use(cookieParser())
 app.use("/api/post" , postRoutes);
 
 app.use("/api/auth" , authRoutes);
-app.use("/api/testRoutes" , testRoutes);
+app.use("/api/test" , testRoutes);
 
 // app.use("/api/test" , (req,res)=>{
 //     res.send("It works")
