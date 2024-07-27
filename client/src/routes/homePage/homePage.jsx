@@ -6,12 +6,9 @@ function HomePage() {
     <div className="homePage">
       <div className="textContainer">
         <div className="wrapper">
-          <h1 className="title">Find Real Estate & Get Your Dream Place</h1>
+          <h1 className="title">Get everything done related to Real Estate</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-            explicabo suscipit cum eius, iure est nulla animi consequatur
-            facilis id pariatur fugit quos laudantium temporibus dolor ea
-            repellat provident impedit!
+            Inpired from the theme of GTA where we make it easier for ypu to buy or sell your properties as if it is a simple game for you.
           </p>
           <SearchBar />
           <div className="boxes">
@@ -25,7 +22,7 @@ function HomePage() {
             </div>
             <div className="box">
               <h1>2000+</h1>
-              <h2>Property Ready</h2>
+              <h2>Properties Ready</h2>
             </div>
           </div>
         </div>
