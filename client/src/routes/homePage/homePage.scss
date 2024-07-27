@@ -4,6 +4,7 @@
   display: flex;
   height: 100%;
   // background-image: bgg.png;
+  z-index: -1;
   
 
 
@@ -15,6 +16,7 @@
         1px -1px 0 #000,
         -1px 1px 0 #000,
         1px 1px 0 #000;
+    z-index: 1;
 
     .wrapper {
       padding-right: 100px;
