@@ -37,7 +37,7 @@ function Navbar() {
               src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt=""
             />
-            <span>Trevor Phillips</span>
+            <span>profile</span>
 >>>>>>> 4908511b49f3a955f36034ba92f542a402fdf3cb
             <Link to="/profile" className="profile">
               {number > 0 && <div className="notification">{number}</div>}
