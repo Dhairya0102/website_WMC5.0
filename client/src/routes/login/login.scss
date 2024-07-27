@@ -1,6 +1,12 @@
 .login {
   height: 100%;
   display: flex;
+  color: #BED9D8;
+  text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
 
   .formContainer {
     flex: 3;
@@ -48,14 +54,14 @@
     }
   }
 
-  .imgContainer {
-    flex: 2;
-    background-color: #fcf5f3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    img {
-      width: 100%;
-    }
-  }
+  // .imgContainer {
+  //   flex: 2;
+  //   background-color: #fcf5f3;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   img {
+  //     width: 100%;
+  //   }
+  // }
 }
