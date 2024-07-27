@@ -3,6 +3,7 @@
 .profilePage {
   display: flex;
   height: 100%;
+  color: #fcf5f3;
 
   @include md{
     flex-direction: column;

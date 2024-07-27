@@ -13,7 +13,7 @@
       text-transform: capitalize;
 
       &.active {
-        background-color: black;
+        background-color: #89769a;
         color: white;
       }
 
@@ -75,7 +75,7 @@
     button {
       border: none;
       cursor: pointer;
-      background-color: #fece51;
+      background-color: #89769a;
       flex: 1;
 
       @include sm{
