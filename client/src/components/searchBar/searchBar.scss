@@ -5,7 +5,7 @@
 
 
     button {
-      padding: 16px 36px;
+      padding: 16px 40px;
       border: 1px solid #999;
       border-bottom: none;
       cursor: pointer;
@@ -20,6 +20,7 @@
       &:first-child {
         border-top-left-radius: 5px;
         border-right: none;
+        
       }
       &:last-child {
         border-top-right-radius: 5px;
@@ -29,7 +30,7 @@
   }
 
   form {
-    border: 1px solid #999;
+    border: 1px solid #141F33;;
     display: flex;
     justify-content: space-between;
     height: 64px;
@@ -41,42 +42,60 @@
     }
 
     input {
-      border: none;
-      padding: 0px 10px;
-      width: 200px;
+  border: none;
+  padding: 10px;
+  width: 200px;
+  margin: 10px; /* Add margin to create space between input boxes */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background: linear-gradient(145deg, #f0f0f0, #e0e0e0); /* Gradient background */
+  transition: all 0.3s ease; /* Smooth transitions */
+  outline: none; /* Remove default outline */
 
-      @include lg {
-        padding: 0px 5px;
+  &:focus {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Darker shadow on focus */
+    border: 1px solid #007BFF; /* Border color change on focus */
+  }
 
-        &:nth-child(2),
-        &:nth-child(3) {
-          width: 140px;
-        }
-      }
-      @include md {
-        width: 200px;
-        &:nth-child(2),
-        &:nth-child(3) {
-          width: 200px;
-        }
-      }
+  @include lg {
+    padding: 0px 5px;
 
-      @include sm{
-        width: auto;
-        &:nth-child(2),
-        &:nth-child(3) {
-          width: auto;
-        }
-        padding: 20px;
-        border: 1px solid #999;
-      }
+    &:nth-child(2),
+    &:nth-child(3) {
+      width: 140px;
     }
+  }
+
+  @include md {
+    width: 200px;
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      width: 200px;
+    }
+  }
+
+  @include sm {
+    width: auto;
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      width: auto;
+    }
+
+    padding: 20px;
+    border: 1px solid #999; /* Default border for small screens */
+  }
+}
+
+    
 
     button {
       border: none;
       cursor: pointer;
       background-color: #89769a;
       flex: 1;
+      border-radius: 5px;
 
       @include sm{
         padding: 10px;

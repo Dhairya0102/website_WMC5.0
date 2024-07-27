@@ -6,6 +6,7 @@
   // background-image: bgg.png;
   z-index: -1;
 
+
   .textContainer {
     flex: 3;
     color: rgb(240, 240, 245);
@@ -47,6 +48,7 @@
       .boxes {
         display: flex;
         justify-content: space-between;
+        
 
         @include sm {
           display: none;
