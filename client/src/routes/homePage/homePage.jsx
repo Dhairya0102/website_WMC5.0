@@ -31,7 +31,7 @@ function HomePage() {
         <img src="/bg.png" alt="" />
       </div> */}
     </div>
-  );
+  )
 }
 
 export default HomePage;
