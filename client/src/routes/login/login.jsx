@@ -26,7 +26,7 @@ function Login() {
       const res = await apiRequest.post("/auth/login",{
         username ,password,
       });
-      // localStorage.setItem("user" , JSON.stringify(res.data))
+      localStorage.setItem("user" , JSON.stringify(res.data))
       updateUser(res.data)
       navigate("/")
     }catch(err){
