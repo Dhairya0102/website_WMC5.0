@@ -61,16 +61,18 @@
         }
       }
 
-      @include sm{
-        width: auto;
-        &:nth-child(2),
-        &:nth-child(3) {
-          width: auto;
-        }
-        padding: 20px;
-        border: 1px solid #999;
-      }
+  @include sm {
+    width: auto;
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      width: auto;
     }
+
+    padding: 20px;
+    border: 1px solid #999; /* Default border for small screens */
+  }
+}
 
     a{
       flex: 1;
