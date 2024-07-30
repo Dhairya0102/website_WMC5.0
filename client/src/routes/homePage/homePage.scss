@@ -5,6 +5,14 @@
   height: 100%;
   // background-image: bgg.png;
   z-index: -1;
+  @font-face {
+    font-family: 'Pricedown';
+    src: url('C:\Users\vedra\OneDrive\Desktop\WMC\website_WMC5.0/PricedownBI-Regular 900.ttf') format('truetype');
+  }
+  
+  body {
+    font-family: 'Pricedown', sans-serif;
+  }
 
 
   .textContainer {

@@ -9,8 +9,13 @@ a {
   color: inherit;
 }
 
+@font-face {
+  font-family: 'Pricedown';
+  src: url('/Pricedown.ttf') format('truetype');
+}
+
 body{
-  font-family: "Lato", sans-serif;
+  font-family: "Pricedown", sans-serif;
   overflow: hidden;
   
 }
