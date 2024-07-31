@@ -32,7 +32,7 @@ function Navbar() {
             <img src={currentUser.avatar || "/noavatar.jpg"} alt="" />
             <span>{currentUser.username}</span>
 
-            <Link to="/profile" className="profile">
+            <Link to="/profile" className="profile" class="shadow__btn">
               {number > 0 && <div className="notification">{number}</div>}  
               <span>Profile</span>
             </Link>
