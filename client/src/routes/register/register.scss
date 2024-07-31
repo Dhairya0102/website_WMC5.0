@@ -1,12 +1,12 @@
 .register {
   height: 100%;
   display: flex;
-  color: #BED9D8;
+  color: white;
   text-shadow: 
-        -1px -1px 0 #000,  
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
+        -2.5px -2.5px 0 #000,  
+        2.5px -2.5px 0 #000,
+        -2.5px 2.5px 0 #000,
+        2.5px 2.5px 0 #000;
 
   .formContainer {
     flex: 3;
@@ -22,7 +22,7 @@
 
       input {
         padding: 20px;
-        border: 1px solid gray;
+        border: 1px solid white;
         border-radius: 5px;
       }
 
@@ -47,7 +47,7 @@
 
       a {
         font-size: 14px;
-        color: gray;
+        color: white;
         border-bottom: 1px solid gray;
         width: max-content;
       }
