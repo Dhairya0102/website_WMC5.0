@@ -1,57 +1,136 @@
+// import "./login.scss";
+// import { Link , useNavigate} from "react-router-dom";
+// import { useContext, useState } from "react";
+// import axios from "axios";
+// import apiRequest from "../../lib/apiRequest";
+// import { AuthContext } from "../../context/AuthContext";
+
+// function Login() {
+//   const [error , setError] = useState("");
+//   const [isLoading , setIsLoading] = useState(false);
+
+//   const {updateUser} = useContext(AuthContext)
+
+//   const navigate = useNavigate()
+
+//   const handleSubmit = async (e) =>{
+//     e.preventDefault()
+//     setIsLoading(true)
+//     setError("")
+//     const formData = new FormData(e.target);
+
+//     const username = formData.get("username");
+//     const password = formData.get("password");
+//     try{
+
+//       const res = await apiRequest.post("/auth/login",{
+//         username ,password,
+//       });
+//       localStorage.setItem("user" , JSON.stringify(res.data))
+//       updateUser(res.data)
+//       navigate("/")
+//     }catch(err){
+//       setError(err.response.data.message)
+
+//     }finally{
+//       setIsLoading(false)
+//     }
+//   };
+//   return (
+//     <div className="login">
+//       <div className="formContainer">
+//         <form onSubmit={handleSubmit}>
+//           <h1>Welcome back</h1>
+//           <input name="username" required minLength={3} maxLength={20} type="text" placeholder="Username" />
+//           <input name="password" type="password" required placeholder="Password" /> 
+          
+//           <button disabled={isLoading}>Login</button>
+//           {error && <span>{error}</span>}
+//           <Link to="/register">{"Don't"} you have an account?</Link>
+//         </form>
+//       </div>
+//       {/* <div className="imgContainer">
+//         <img src="/bg.png" alt="" />
+//       </div> */}
+//     </div>
+//   );
+// }
+
+// export default Login;
+
 import "./login.scss";
-import { Link , useNavigate} from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import axios from "axios";
 import apiRequest from "../../lib/apiRequest";
 import { AuthContext } from "../../context/AuthContext";
 
 function Login() {
-  const [error , setError] = useState("");
-  const [isLoading , setIsLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
-  const {updateUser} = useContext(AuthContext)
+  const { updateUser } = useContext(AuthContext);
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
-  const handleSubmit = async (e) =>{
-    e.preventDefault()
-    setIsLoading(true)
-    setError("")
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    setError("");
     const formData = new FormData(e.target);
 
     const username = formData.get("username");
     const password = formData.get("password");
-    try{
-
-      const res = await apiRequest.post("/auth/login",{
-        username ,password,
+    try {
+      const res = await apiRequest.post("/auth/login", {
+        username, password,
       });
-      localStorage.setItem("user" , JSON.stringify(res.data))
-      updateUser(res.data)
-      navigate("/")
-    }catch(err){
-      setError(err.response.data.message)
-
-    }finally{
-      setIsLoading(false)
+      localStorage.setItem("user", JSON.stringify(res.data));
+      updateUser(res.data);
+      navigate("/");
+    } catch (err) {
+      setError(err.response.data.message);
+    } finally {
+      setIsLoading(false);
     }
   };
+
   return (
     <div className="login">
       <div className="formContainer">
         <form onSubmit={handleSubmit}>
           <h1>Welcome back</h1>
-          <input name="username" required minLength={3} maxLength={20} type="text" placeholder="Username" />
-          <input name="password" type="password" required placeholder="Password" /> 
-          
+          <div className="form-control">
+            <input name="username" required minLength={3} maxLength={20} type="text" />
+            <label>
+              <span style={{ transitionDelay: '0ms' }}>U</span>
+              <span style={{ transitionDelay: '50ms' }}>s</span>
+              <span style={{ transitionDelay: '100ms' }}>e</span>
+              <span style={{ transitionDelay: '150ms' }}>r</span>
+              <span style={{ transitionDelay: '200ms' }}>n</span>
+              <span style={{ transitionDelay: '250ms' }}>a</span>
+              <span style={{ transitionDelay: '300ms' }}>m</span>
+              <span style={{ transitionDelay: '350ms' }}>e</span>
+            </label>
+          </div>
+          <div className="form-control">
+            <input name="password" type="password" required />
+            <label>
+              <span style={{ transitionDelay: '0ms' }}>P</span>
+              <span style={{ transitionDelay: '50ms' }}>a</span>
+              <span style={{ transitionDelay: '100ms' }}>s</span>
+              <span style={{ transitionDelay: '150ms' }}>s</span>
+              <span style={{ transitionDelay: '200ms' }}>w</span>
+              <span style={{ transitionDelay: '250ms' }}>o</span>
+              <span style={{ transitionDelay: '300ms' }}>r</span>
+              <span style={{ transitionDelay: '350ms' }}>d</span>
+            </label>
+          </div>
           <button disabled={isLoading}>Login</button>
           {error && <span>{error}</span>}
           <Link to="/register">{"Don't"} you have an account?</Link>
         </form>
       </div>
-      {/* <div className="imgContainer">
-        <img src="/bg.png" alt="" />
-      </div> */}
     </div>
   );
 }

@@ -4,6 +4,8 @@
   display: flex;
   height: 100%;
   z-index: -1;
+  background-image: url('bgg.png'); // Specify the path to your image
+
   @font-face {
     font-family: 'Pricedown';
     src: url('/client/src/gtafont.ttf') format('truetype');
