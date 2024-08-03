@@ -7,6 +7,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
+    text-shadow: 
+    -2.5px -2.5px 0 #000,  
+    2.5px -2.5px 0 #000,
+    -2.5px 2.5px 0 #000,
+    2.5px 2.5px 0 #000;
     form {
       display: flex;
       flex-direction: column;
@@ -27,29 +33,70 @@
         }
       }
       button {
-        padding: 20px;
-        border-radius: 5px;
-        border: none;
-        background-color: teal;
-        color: white;
-        font-weight: bold;
+        padding: 12px 24px;
+        background-color: #89769a;
+        color: #fff;
         cursor: pointer;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        position: relative;
+        overflow: hidden;
+      
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 300%;
+          height: 100%;
+          background: linear-gradient(120deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+          transition: all 0.4s ease;
+        }
+      
+        &:hover:before {
+          left: 100%;
+        }
+      
+        &:hover {
+          background-color: #765a8a;
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+          transform: translateY(-2px);
+        }
+      
+        &:active {
+          transform: translateY(2px);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
       }
+      
     }
   }
 
   .sideContainer {
     flex: 2;
-    background-color: #fcf5f3;
+    background-color: #f5f2f0; // Subtle, soft background color
     display: flex;
     flex-direction: column;
+    
     gap: 20px;
     align-items: center;
     justify-content: center;
+    padding: 20px; // Add some padding for spacing
+    border-radius: 15px; // Rounded corners
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); // Soft shadow for depth
 
-    .avatar{
-      width: 50%;
+    .avatar {
+      width: 50%; // Slightly smaller width for better composition
+      border-radius: 50%; // Circular avatar
       object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); // Shadow for the avatar
+      border: 3px solid #89769a; // Border matching the overall color scheme
     }
-  }
+}
+
 }
