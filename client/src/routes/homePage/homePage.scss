@@ -2,9 +2,10 @@
 
 .homePage {
   display: flex;
+  padding: 15px;
   height: 100%;
   z-index: -1;
-  background-image: url('bgg.png'); // Specify the path to your image
+  // background-image: url('bgg.png'); // Specify the path to your image
 
   @font-face {
     font-family: 'Pricedown';
@@ -19,11 +20,11 @@
   .textContainer {
     flex: 3;
     color: white;
-    // text-shadow: 
-    //     -3px -3px 0 #000,  
-    //     3px -3px 0 #000,
-    //     -3px 3px 0 #000,
-    //     3px 3px 0 #000;
+    text-shadow: 
+        -3px -3px 0 #000,  
+        3px -3px 0 #000,
+        -3px 3px 0 #000,
+        3px 3px 0 #000;
     z-index: 1;
 
     .wrapper {

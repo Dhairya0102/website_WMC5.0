@@ -87,14 +87,14 @@
   2.5px -2.5px 0 #000,
   -2.5px 2.5px 0 #000,
   2.5px 2.5px 0 #000;
-  background-image: url('loginbg.jpg'); // Specify the path to your image
-  background-size: cover;
+   // Specify the path to your image
+  background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh; // Ensure it covers at least the full viewport height
   display: flex;
   flex-direction: column;
-  z-index: -1;
+  z-index: -2;
 
   .formContainer {
     flex: 3;
@@ -102,19 +102,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background-image: url('loginbggg.png');
+    background-size: 100%; // Decrease the size of the background image
+    
     form {
       display: flex;
       flex-direction: column;
       gap: 20px;
-      background: rgba(0, 0, 0, 0.5);
-      padding: 40px;
-      border-radius: 10px;
+      background: linear-gradient(145deg, rgba(142, 138, 138, 0.8), rgba(200, 200, 200, 0.5));
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25), inset 0 0 20px rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(3px);
+      transition: all 0.3s ease;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 10%;
+      z-index: 0;
 
       .form-control {
         position: relative;
         margin: 20px 0;
         width: 100%;
+        
       }
 
       .form-control input {
