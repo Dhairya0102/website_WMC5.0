@@ -33,5 +33,6 @@ body::before {
   background-position: center;
   background-repeat: no-repeat;
   filter: blur(4px); /* Apply blur effect */
-  z-index: -1; /* Ensure the blurred image is behind the content */
+  z-index: -2; /* Ensure the blurred image is behind the content */
 }
+  
