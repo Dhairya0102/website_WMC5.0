@@ -43,6 +43,7 @@ enum Property {
   house
   condo
   land
+  
 }
 
 model PostDetail {
