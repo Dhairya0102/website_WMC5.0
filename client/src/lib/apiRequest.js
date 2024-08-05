@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiRequest = axios.create({
-  baseURL: "https://wmc5dhairyavedwebsite1234.vercel.app/api",
+  baseURL: "https://website-wmc5-0.onrender.com",
   withCredentials: true,
 });
 
