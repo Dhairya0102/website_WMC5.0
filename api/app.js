@@ -64,6 +64,6 @@ app.use("/api/test", testRoute);
 app.use("/api/chats", chatRoute);
 app.use("/api/messages", messageRoute);
 
-app.listen(5500, () => {
-  console.log("Server is running!");
-});
+// app.listen(5500, () => {
+//   console.log("Server is running!");
+// });
