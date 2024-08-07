@@ -1,0 +1,27 @@
+.aboutPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(145deg, #f0f0f0, #c8c8c8);
+  }
+  
+  .aboutContent {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+  
+    p {
+      font-size: 18px;
+      color: #666;
+    }
+  }
+  
