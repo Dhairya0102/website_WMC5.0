@@ -2,19 +2,29 @@
 
 .homePage {
   display: flex;
+  padding: 15px;
   height: 100%;
-  // background-image: bgg.png;
   z-index: -1;
+  // background-image: url('bgg.png'); // Specify the path to your image
+
+  @font-face {
+    font-family: 'Pricedown';
+    src: url('/client/src/gtafont.ttf') format('truetype');
+  }
+  
+  body {
+    font-family: 'Pricedown', sans-serif;
+  }
 
 
   .textContainer {
     flex: 3;
-    color: rgb(240, 240, 245);
+    color: white;
     text-shadow: 
-        -1px -1px 0 #000,  
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
+        -3px -3px 0 #000,  
+        3px -3px 0 #000,
+        -3px 3px 0 #000,
+        3px 3px 0 #000;
     z-index: 1;
 
     .wrapper {
@@ -24,6 +34,7 @@
       justify-content: center;
       gap: 50px;
       height: 100%;
+      color: white;
 
       @include lg{
         padding-right: 50px;
@@ -39,6 +50,7 @@
 
       .title {
         font-size: 64px;
+        
 
         @include lg {
           font-size: 48px;
@@ -72,7 +84,7 @@
 
   .imgContainer {
     flex: 2;
-    background-color: #fcf5f3;
+    background-color: #faf7f6;
     position: relative;
     display: flex;
     align-items: center;

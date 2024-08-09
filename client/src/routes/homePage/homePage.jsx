@@ -6,9 +6,9 @@ function HomePage() {
     <div className="homePage">
       <div className="textContainer">
         <div className="wrapper">
-          <h1 className="title">Get everything done related to Real Estate</h1>
+          <h1 className="title">It is Now Easy To Buy Your Favourite Estates</h1>
           <p>
-            Inpired from the theme of GTA where we make it easier for ypu to buy or sell your properties as if it is a simple game for you.
+            Inpired from the theme of GTA where we make it easier for you to buy or sell your properties as if it is a simple game for you.
           </p>
           <SearchBar />
           <div className="boxes">
@@ -27,9 +27,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-       {/* <div className="imgContainer">
-        <img src="/bg.png" alt="" />
-      </div> */}
+      
     </div>
   )
 }
